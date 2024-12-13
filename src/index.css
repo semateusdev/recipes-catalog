@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: #e5edf8;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #dc2f02;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #e85d04;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.4em 0.8em;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: #dc2e02de;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: #f9f9f9;
+  font-weight: 600;
+}
+button:hover {
+  background-color: #e85d04;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #e85d04;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Ancho del scroll */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo del track */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    45deg,
+    #e85d04,
+    #dc2e02de
+  ); /* Degradado moderno */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 3px solid #f1f1f1; /* Espaciado entre thumb y track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #e85d04, #dc2e02de);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #e85d04, #dc2e02de);
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+  transition: background 0.3s ease-in-out; /* Animación suave */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #e85d04, #dc2e02de);
+}
