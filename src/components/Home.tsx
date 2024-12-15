@@ -41,6 +41,10 @@ export function Home() {
     }
 
     const search = (word: string) => setWordToSearch(word);
+
+    const  goRepository = () => {
+        window.open('https://github.com/semateusdev/recipes-catalog', '_blank')
+    }
     
     return (
         <section className="w-[100vw] flex overflow-hidden px-4">
@@ -50,7 +54,7 @@ export function Home() {
                     <div className="flex-1 FHD:w-2/3 FHD:flex-none">
                         <SearchInput search={search}></SearchInput>
                     </div>
-                    <img src="/github.svg" alt="Logo de github" className="w-12"/>
+                    <img src="/github.svg" alt="Logo de github" className="w-12 cursor-pointer" onClick={goRepository}/>
                 </div>
                 <div className="w-full h-without-6 bg-[#f4f8ff] rounded-xl p-4 flex flex-col shadow-[0_0_15px_-7px] shadow-[#23262b]">
                     <p className="mb-8 text-3xl font-bold text-primary h-fit">Recipe catalog</p>
