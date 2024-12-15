@@ -1,6 +1,14 @@
 export interface Recipe {
     id: number;
     title: string;
+    image: string;
+}
+
+export interface DetailRecipe {
+    id: number;
+    title: string;
+    vegetarian: boolean;
+    veryHealthy: boolean;
     readyInMinutes: number;
     image: string;
     summary: string;
@@ -60,4 +68,12 @@ export interface Metric {
     amount:    number;
     unitShort: string;
     unitLong:  string;
+}
+export enum DishTypes {
+    DRINKS = 'drink',
+    BREAKFAST = 'breakfast',
+    SALAD = 'salad',
+    DESSERT = 'dessert',
+    MAIN_COURSE = 'main course',
+    SNACKS = 'snack',
 }

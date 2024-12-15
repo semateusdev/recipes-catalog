@@ -10,7 +10,8 @@ export default {
         primary: '#dc2f02'
       },
       height: {
-        withoutheader: 'calc(100vh - 8rem)'
+        withoutheader: 'calc(100vh - 8rem)',
+        'without-6': 'calc(100vh - 8.3rem)',
       }
     },
     screens: {

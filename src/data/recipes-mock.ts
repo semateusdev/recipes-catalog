@@ -1,11 +1,13 @@
-import { Consistency, Recipe } from "../interfaces/Recipe";
+import { Consistency, DetailRecipe } from "../interfaces/Recipe";
 
-export const recipesMock: Recipe[] = [
+export const recipesMock: DetailRecipe[] = [
     {
         id: 664477,
         title: 'Vegan Pumpkin Bundt Cake',
         image: 'https://img.spoonacular.com/recipes/664477-556x370.jpg',
         readyInMinutes: 105,
+        vegetarian: true,
+        veryHealthy: false,
         summary: 'Vegan Pumpkin Bundt Cake is a dairy free, lacto ovo vegetarian, and vegan dessert. For $1.01 per serving, this recipe covers 13% of your daily requirements of vitamins and minerals. This recipe makes 18 servings with 245 calories, 5g of protein, and 8g of fat each. This recipe from Foodista requires canolan oil, soymilk, golden raisins, and barley flour. 4 people have made this recipe and would make it again. From preparation to the plate, this recipe takes roughly 1 hour and 45 minutes. With a spoonacular score of 47%, this dish is solid. Similar recipes are Pumpkin Bundt Cake with Pumpkin Glaze, and Pumpkin Bundt Cake.',
         dishTypes: ['dessert'],
         extendedIngredients: [
