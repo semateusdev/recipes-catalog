@@ -1,6 +1,9 @@
+import { Recipe } from "./Recipe";
+
 export interface CardElement {
     id: number;
     name: string;
     image: string;
-    describe?: string;
+    isFavorite?: boolean;
+    addFavorite?: (recipe: Recipe) => void;
 }

@@ -2,6 +2,7 @@ export interface Recipe {
     id: number;
     title: string;
     image: string;
+    isFavorite: boolean;
 }
 
 export interface DetailRecipe {
